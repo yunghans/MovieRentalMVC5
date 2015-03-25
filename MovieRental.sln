@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental", "MovieRental\MovieRental.csproj", "{93FDEBCC-F598-41EC-8DA6-D8D5AEDCD5D0}"
 EndProject
@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{2152ED
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieRental.BL", "MovieRental.BL\MovieRental.BL.csproj", "{A04EB25C-F83D-46A4-AD24-76A2DC016B18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{624B5B01-0229-4A27-A7A9-E18708DB88B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{624B5B01-0229-4A27-A7A9-E18708DB88B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{624B5B01-0229-4A27-A7A9-E18708DB88B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A04EB25C-F83D-46A4-AD24-76A2DC016B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A04EB25C-F83D-46A4-AD24-76A2DC016B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A04EB25C-F83D-46A4-AD24-76A2DC016B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A04EB25C-F83D-46A4-AD24-76A2DC016B18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

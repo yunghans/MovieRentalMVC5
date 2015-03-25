@@ -163,7 +163,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\BulkLoadController.cs" />
     <Compile Include="Areas\Admin\Controllers\MovieController.cs" />
+    <Compile Include="Areas\Admin\Models\BulkLoadOutput.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -191,6 +193,10 @@
     <Content Include="Areas\Admin\Views\Movie\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Movie\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Movie\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\BulkLoad\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\BulkLoad\BulkOutput.cshtml" />
+    <Content Include="Areas\Admin\Views\BulkLoad\DisplayTemplates\Movie.cshtml" />
+    <Content Include="Areas\Admin\Views\BulkLoad\Save.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -236,7 +242,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -246,6 +251,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MovieRental.BL\MovieRental.BL.csproj">
+      <Project>{a04eb25c-f83d-46a4-ad24-76a2dc016b18}</Project>
+      <Name>MovieRental.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MovieRental.Data\MovieRental.Data.csproj">
       <Project>{4dd88d21-4985-41d4-9b78-9368d87c4c58}</Project>
       <Name>MovieRental.Data</Name>
