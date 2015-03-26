@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MovieRental.Data;
+using MovieRental.Models;
 
 namespace MovieRental.Controllers
 {
@@ -10,7 +12,11 @@ namespace MovieRental.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            MovieRepository rep = new MovieRepository();
+            IEnumerable<Movie> movies = rep.GetAllMovies();
+
+            return View(movies);
+
         }
 
         public ActionResult About()
